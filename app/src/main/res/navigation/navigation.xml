@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/radioFragment">
+
+    <fragment
+        android:id="@+id/checkConnectionFragment"
+        android:name="com.example.saudiliveradio.observeconnectivity.CheckConnectionFragment"
+        android:label="fragment_check_connection"
+        tools:layout="@layout/fragment_check_connection"
+        >
+        <action
+            android:id="@+id/action_checkConnectionFragment_to_radioFragment"
+            app:destination="@id/radioFragment"
+            app:popUpTo="@id/checkConnectionFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.example.saudiliveradio.presentation.RadioFragment"
+        android:label="fragment_radio"
+        tools:layout="@layout/fragment_radio" >
+        <action
+            android:id="@+id/action_radioFragment_to_radioPlayerFragment"
+            app:destination="@id/radioPlayerFragment" />
+        <action
+            android:id="@+id/action_radioFragment_to_checkConnectionFragment"
+            app:destination="@id/checkConnectionFragment"
+            app:popUpTo="@id/radioFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/radioPlayerFragment"
+        android:name="com.example.saudiliveradio.presentation.RadioPlayerFragment"
+        android:label="fragment_radio_player"
+        tools:layout="@layout/fragment_radio_player" >
+        <argument
+            android:name="radio_url"
+            app:argType="string"
+            android:defaultValue="error" />
+        <action
+            android:id="@+id/action_radioPlayerFragment_to_checkConnectionFragment"
+            app:destination="@id/checkConnectionFragment"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true"
+            />
+
+    </fragment>
+</navigation>

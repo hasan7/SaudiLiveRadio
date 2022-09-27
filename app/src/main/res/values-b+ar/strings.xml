@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">راديو السعودية مباشر</string>
+
+    <string name="no_connection">لا يوجد اتصال بالأنترنت!</string>
+    <string name="try_agian">أضغط للمحاوله مره أخرى</string>
+    <string name="notifcation_title">راديو السعودية مباشر</string>
+    <string name="notifcation_text">يعمل في الخلفية</string>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.RadioFragment"
+    android:id="@+id/linearlayout">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="10dp"
+        android:useDefaultMargins="true"
+        android:layout_centerHorizontal="true"
+        >
+
+            <ImageView
+                android:visibility="invisible"
+                android:padding="10dp"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/channel13"
+                android:background="@drawable/grid_border"
+                android:foreground="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/channel14"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/grid_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple"
+            android:padding="10dp" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:padding="10dp"
+                android:id="@+id/channel12"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/grid_border"
+                android:foreground="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/channel15"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/grid_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple"
+            android:padding="10dp" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:padding="10dp"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/channel11"
+                android:background="@drawable/grid_border"
+                android:foreground="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                />
+    </GridLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+</RelativeLayout>
+<!-- old vertical layout -->
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".presentation.RadioFragment"-->
+<!--android:id="@+id/linearlayout"-->
+<!--android:orientation="vertical">-->
+
+
+<!--<ScrollView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+
+<!--    >-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        >-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:id="@+id/channel13"/>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+
+<!--                android:id="@+id/channel14"/>-->
+
+
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progress_bar"-->
+<!--                style="?android:attr/progressBarStyleSmall"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:visibility="visible"/>-->
+
+<!--        </RelativeLayout>-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/channel12"-->
+<!--            android:layout_width="match_parent"-->
+
+<!--            android:layout_height="200dp" />-->
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+
+<!--            android:id="@+id/channel15"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+
+<!--            android:id="@+id/channel11"-->
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+
+<!--</ScrollView>-->
+
+<!--</LinearLayout>-->
